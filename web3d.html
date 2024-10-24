@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Khawla Chouder - Module Web 3D avec projet Table_And_Chair">
+    <meta name="keywords" content="portfolio, projet, développeur, web 3D, Table_And_Chair">
+    <meta name="author" content="Khawla Chouder">
+    <title>Portfolio de Khawla Chouder - Web 3D</title>
+    <style>
+        /* Style de base avec un fond 3D inspiré des motifs informatiques */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #222;
+            background-image: url('https://www.transparenttextures.com/patterns/circuits.png'); /* Motif circuits imprimés */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        /* Container avec effet 3D et motifs */
+        .container {
+            background: linear-gradient(145deg, #333, #1a1a1a);
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.05);
+            padding: 50px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            transform: perspective(1000px) rotateX(2deg) rotateY(-2deg);
+            transition: transform 0.3s ease-in-out;
+            background-image: url('https://www.transparenttextures.com/patterns/3d-polygons.png'); /* Motif polygones 3D */
+            background-blend-mode: overlay;
+        }
+
+        .container:hover {
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+        }
+
+        /* Titre principal */
+        h1 {
+            color: #f7f7f7;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Sous-titre pour le module */
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #00bfff;
+        }
+
+        /* Liste des projets avec effet bouton 3D */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00bfff;
+            font-size: 1.5em;
+            background: linear-gradient(145deg, #1a1a1a, #333);
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6), -5px -5px 20px rgba(255, 255, 255, 0.2);
+            background: linear-gradient(145deg, #1a1a1a, #444);
+        }
+
+        /* Bouton de contact avec effet 3D */
+        .contact-btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 30px;
+            background-color: #00bfff;
+            color: #fff;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+            font-size: 1.2em;
+        }
+
+        .contact-btn:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6), -5px -5px 20px rgba(255, 255, 255, 0.2);
+            background-color: #0080ff;
+        }
+
+        /* Media Queries pour petits écrans */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            ul li a {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Portfolio de Khawla Chouder</h1>
+        <h2>Module : Web 3D</h2>
+        <p>Découvrez mon projet dans le cadre du module Web 3D :</p>
+        
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1aqR9rCcWPif3k31eSFuphiJZOG72281T/view?usp=sharing" target="_blank">Projet 1 - Table_And_Chair</a></li>
+        </ul>
+
+        <a class="contact-btn" href="mailto:chouderkhawlaa@gmail.com">Contactez-moi</a>
+    </div>
+
+</body>
+</html>
